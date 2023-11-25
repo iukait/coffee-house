@@ -1,14 +1,27 @@
 .header__container {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 
   display:flex;
 }
 
 .header__menu-link {
+  position:relative;
   margin-left: auto;
- padding-top: 16px;
+  padding-top: 16px;
 
   display: flex;
   gap: 8px;
+
+  &:hover::after,
+  &:active::after {
+    position:absolute;
+    content:"";
+    bottom: 26px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-default-blackOlive;
+  }
 }
+

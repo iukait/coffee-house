@@ -1,0 +1,78 @@
+.hero__container {
+  position: relative;
+  z-index: 0;
+  padding: 100px;
+
+  
+
+}
+
+.hero__container:after {
+  position: absolute;
+  content: "";
+  top: 0;left: 0;
+
+  width: 100%;
+  height:100%;
+
+  background: url("../img/hero/img-hero.jpg") lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+
+  z-index: -1;
+
+  @media (min-resolution: $retina-dpi) and (min-width: $retina-dppx) {
+    background: url("../img/hero/img-hero@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero__wrapper {
+  width: 530px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.hero__title {
+  color:$color-lightTaupe;
+}
+
+.hero__title span {
+  font-style: italic;
+  color:$color-bone;
+}
+
+.hero__desc {
+  color:$color-bone;
+}
+
+
+.hero__btn {  
+  position: relative;
+  padding: 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  // gap: 8px;
+  
+  border-radius: 100px;
+  background-color: $color-bone;
+  min-width: 200px;
+}
+
+.hero__btn svg {
+  position:absolute;
+  display:none;
+  top: 21px;
+  right: 49px;
+}
+
+.hero__btn:hover svg {
+  display: inline;
+  transition: $trans-default;
+}

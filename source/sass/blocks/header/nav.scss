@@ -17,10 +17,17 @@
 }
 
 .nav__link {
+ 
   font-family: $ff-inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;  
   letter-spacing: 0.1px;
+
+  &:hover,
+  &:active{
+   width: 100%;
+    border-bottom: 2px solid $color-default-blackOlive;
+  }
 }

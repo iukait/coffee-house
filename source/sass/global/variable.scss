@@ -15,12 +15,17 @@ $vp-1440:                                      1440px;
 // Retina
 // ---------------------------------
 
-$retina-dpi:                                  144dpi;
-$retina-dppx:                                 1.5dppx;
+$retina-dpi:                                   144dpi;
+$retina-dppx:                                  1.5dppx;
 
 // Fonts
 // ----------------------------------
 
-$ff-inter:                                    "Inter", "Arial", sans-serif;
+$ff-inter:                                     "Inter", "Arial", sans-serif;
 
-$fz-default:                                  16px;
+$fz-default:                                   16px;
+// Animation
+// ---------------------------------
+
+$tf-default:                                   ease;
+$trans-default:                                0.3s $tf-default;
