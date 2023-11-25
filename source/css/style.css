@@ -1,0 +1,137 @@
+h1 {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105%;
+}
+
+h2 {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+h3 {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-style: italic;
+  font-weight: 600;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-SemiBoldItalic.woff2") format("woff2");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: #b0907a;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter", "Arial", sans-serif;
+  color: #403f3d;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #e1d4c9;
+}
+
+a {
+  color: #403f3d;
+  text-decoration: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  appearance: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.header__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.header__menu-link {
+  margin-left: auto;
+  padding-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.nav {
+  display: flex;
+  align-items: self-start;
+  flex-grow: 1;
+  padding-top: 16px;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.nav__link {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
+/*# sourceMappingURL=style.css.map */
