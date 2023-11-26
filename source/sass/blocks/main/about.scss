@@ -1,0 +1,41 @@
+.main__about {
+}
+
+.about {
+}
+
+.about__container {
+}
+
+.container {
+}
+
+.about__title span {
+  font-style: italic;
+}
+
+.about__img-wrapper {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(360px,1fr));
+  grid-auto-rows:100px;
+  grid-gap:20px;  
+}
+
+.about__img {
+  border-radius: 20px;  
+  grid-row:span 5;
+}
+.about-1{
+  order:-1
+}
+.about-2{
+  order:3;
+}
+
+.about-3 {
+  order: 2;
+}
+
+.about-4{
+  order:4
+}

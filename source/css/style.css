@@ -84,11 +84,17 @@ video {
   height: auto;
 }
 
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  appearance: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .container {
@@ -212,11 +218,144 @@ button,
   display: none;
   top: 21px;
   right: 49px;
+  transition: display 1s ease;
 }
 
 .hero__btn:hover svg {
   display: inline;
-  transition: 0.3s ease;
+}
+
+.offers__container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.offers__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.offers__title span {
+  color: #b0907a;
+}
+
+.offers__slider-wrapper {
+  position: relative;
+}
+
+.offers__btn-control {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #665f55;
+  border-radius: 50%;
+  background-color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.offers__btn-control--prev {
+  transform: translateY(-50%) rotate(180deg);
+  left: 0;
+}
+
+.offers__btn-control--next {
+  right: 0;
+}
+
+.offers__list-slider {
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.offers__item {
+  display: none;
+  width: 480px;
+  text-align: center;
+}
+
+.offers__item--active {
+  display: flex;
+  flex-direction: column;
+}
+
+.offers__img {
+  margin-bottom: 20px;
+}
+
+.offers__header {
+  margin-bottom: 16px;
+}
+
+.offers__decs {
+  margin-bottom: 16px;
+}
+
+.offers__span {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.offers__bullet-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.offers__bullet-btn {
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+  background: #c1b6ad;
+  border: none;
+}
+
+.offers__bullet-btn--active {
+  background: #665f55;
+}
+
+.about__title span {
+  font-style: italic;
+}
+
+.about__img-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(360px, 1fr));
+  grid-auto-rows: 100px;
+  grid-gap: 20px;
+}
+
+.about__img {
+  border-radius: 20px;
+  grid-row: span 5;
+}
+
+.about-1 {
+  order: -1;
+}
+
+.about-2 {
+  order: 3;
+}
+
+.about-3 {
+  order: 2;
+}
+
+.about-4 {
+  order: 4;
 }
 
 /*# sourceMappingURL=style.css.map */
