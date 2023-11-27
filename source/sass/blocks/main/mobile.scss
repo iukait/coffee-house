@@ -1,6 +1,8 @@
 .mobile__container {
   display:flex;
   gap: 99px;
+  padding-bottom: 96px;
+  ;
 }
 
 .mobile__text-wrapper {
@@ -10,28 +12,22 @@
   flex-direction:column;
   gap: 40px;
 }
+
 .mobile__title span{
   font-style: italic;
 }
-.mobile__desc {
-}
+
 .mobile__btn-wrapper {
   display:flex;
   gap: 20px;
 }
 
 .mobile__btn {
-  background-color: transparent;
+  background-color: $color-transparent;
   border-radius: 100px;
   border: 1px solid $color-wenge;
   padding: 12px 20px;
   min-width:200px;
-}
-.mobile__svg {
-}
-.mobile__img-wrapper {
-}
-.mobile__img {
 }
 
 .mobile__btn-icon-wrapper{

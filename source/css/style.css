@@ -378,6 +378,7 @@ video {
 .mobile__container {
   display: flex;
   gap: 99px;
+  padding-bottom: 96px;
 }
 
 .mobile__text-wrapper {
@@ -428,6 +429,82 @@ video {
   display: flex;
   flex-direction: column;
   gap: 2px;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #665f55;
+  color: #e1d4c9;
+  border-radius: 40px;
+  padding: 100px;
+  gap: 100px;
+}
+
+.social {
+  width: 530px;
+}
+
+.social__title {
+  margin-bottom: 40px;
+}
+
+.social__title span {
+  font-style: italic;
+  color: #b0907a;
+}
+
+.social__list {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #c1b6ad;
+}
+
+.contact {
+  padding-top: 32px;
+}
+
+.contact_title {
+  margin-bottom: 41px;
+}
+
+.contact__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.contact__item {
+  display: flex;
+  gap: 8px;
+}
+
+.contact__address {
+  font-weight: 600;
+}
+
+.contact__tel {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: #e1d4c9;
+}
+
+.contact__time {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
