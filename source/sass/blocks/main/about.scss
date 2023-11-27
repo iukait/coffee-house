@@ -3,7 +3,7 @@
 }
 
 .about__title{
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 .about__title span {
   font-style: italic;
@@ -21,6 +21,12 @@
   border-radius: 20px;  
   grid-row:span 5;
 }
+
+.about__img:hover {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
 .about-1{
   order:-1
 }

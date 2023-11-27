@@ -60,7 +60,8 @@
   background-color: $color-bone;
   min-width: 200px;
 
-  font-weight: 600;
+  font-weight: 600; 
+  transition: display 1s ease;
 }
 
 .hero__btn svg {
@@ -68,7 +69,7 @@
   display:none;
   top: 21px;
   right: 49px;
-  transition: display 1s ease;
+ 
 }
 
 .hero__btn:hover svg {
