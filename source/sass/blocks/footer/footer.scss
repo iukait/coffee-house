@@ -1,0 +1,14 @@
+.footer {
+  margin-bottom: 63px;
+}
+
+.footer__container {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  background-color: $color-wenge;
+  color:$color-bone;
+  border-radius: 40px;
+  padding: 100px;
+  gap: 100px;
+}
+

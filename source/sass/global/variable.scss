@@ -1,0 +1,33 @@
+// Colors
+
+$color-default-black-olive:                     #403f3d;
+$color-default-white:                           #ffffff;
+$color-light-taupe:                             #b0907a;
+$color-bone:                                    #e1d4c9;
+$color-wenge:                                   #665f55;
+$color-silver-pink:                             #c1b6ad;
+$color-transparent:                             transparent;
+
+
+// Viewports
+// ---------------------------------
+
+$vp-1440:                                      1440px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                                   144dpi;
+$retina-dppx:                                  1.5dppx;
+
+// Fonts
+// ----------------------------------
+
+$ff-inter:                                     "Inter", "Arial", sans-serif;
+
+$fz-default:                                   16px;
+// Animation
+// ---------------------------------
+
+$tf-default:                                   ease;
+$trans-default:                                0.3s $tf-default;

@@ -1,0 +1,70 @@
+.menu-list {
+  list-style:none;
+  display:flex;
+  gap: 16px;
+  justify-content:center;
+  margin-bottom: 38px;
+}
+
+
+.menu-list__link {
+  position:relative;
+  display: flex;
+  padding: 10px 15px 11px 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;  border: 1px solid  $color-silver-pink;
+  font-weight: 600;
+    &:hover {
+      background: $color-wenge;
+      color:$color-bone;
+    }
+}
+
+.menu-list__item--active .menu-list__link {
+  background: $color-wenge;
+  color:$color-bone;
+  cursor: context-menu;
+}
+
+.menu-list__link--active::after {
+  background: $color-bone; 
+}
+
+.menu-list__link::after{
+  position:absolute;
+  content:"";
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  background-color: $color-silver-pink;
+  z-index: 0;
+  top: 50%;
+  left: 9px;
+  transform:translateY(-50%);
+}
+
+.menu-list__link::before {
+  position:absolute;
+  content:"";
+  z-index: 1;
+  width: 16px;
+  height: 24px;
+
+  top: 31%;
+  left: 15px;
+}
+
+.menu-list__link--coffee::before { 
+  background:url("../img/menu/coffee.svg") no-repeat;  
+}
+
+.menu-list__link--tea::before {
+  background:url("../img/menu/tea.svg") no-repeat; 
+}
+
+.menu-list__link--dessert::before {
+  background:url("../img/menu/dessert.svg") no-repeat;
+}
+ 
