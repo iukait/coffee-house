@@ -9,7 +9,7 @@
 html,
 body {  
   min-height: 100vh;
-  background-color: $color-light-taupe;
+ 
 }
 
 html {
@@ -19,13 +19,15 @@ html {
   line-height: 150%;
   font-family: $ff-inter;
   color: $color-default-black-olive;
+
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
   height: 100%;
 
-  background-color: $color-bone
+  background-color: $color-bone;
 }
 
 a {

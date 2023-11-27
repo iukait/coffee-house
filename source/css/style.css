@@ -54,7 +54,6 @@ h3 {
 html,
 body {
   min-height: 100vh;
-  background-color: #b0907a;
 }
 
 html {
@@ -64,6 +63,7 @@ html {
   line-height: 150%;
   font-family: "Inter", "Arial", sans-serif;
   color: #403f3d;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -124,6 +124,10 @@ video {
   width: 100%;
   height: 2px;
   background-color: #403f3d;
+}
+
+.header__logo:hover {
+  opacity: 0.5;
 }
 
 .nav {
@@ -190,12 +194,12 @@ video {
 }
 
 .hero__title {
-  color: #b0907a;
+  color: #e1d4c9;
 }
 
 .hero__title span {
   font-style: italic;
-  color: #e1d4c9;
+  color: #b0907a;
 }
 
 .hero__desc {
@@ -211,6 +215,7 @@ video {
   border-radius: 100px;
   background-color: #e1d4c9;
   min-width: 200px;
+  font-weight: 600;
 }
 
 .hero__btn svg {
@@ -237,6 +242,7 @@ video {
 
 .offers__title span {
   color: #b0907a;
+  font-style: italic;
 }
 
 .offers__slider-wrapper {
@@ -255,6 +261,15 @@ video {
   background-color: transparent;
   top: 50%;
   transform: translateY(-50%);
+}
+.offers__btn-control:hover, .offers__btn-control:focus, .offers__btn-control:active {
+  background-color: #665f55;
+}
+
+.offers__btn-control:hover svg,
+.offers__btn-control:focus svg,
+.offers__btn-control:active svg {
+  color: #e1d4c9;
 }
 
 .offers__btn-control--prev {
@@ -336,6 +351,7 @@ video {
 
 .about__title span {
   font-style: italic;
+  color: #b0907a;
 }
 
 .about__img-wrapper {
@@ -391,6 +407,7 @@ video {
 
 .mobile__title span {
   font-style: italic;
+  color: #b0907a;
 }
 
 .mobile__btn-wrapper {
@@ -405,30 +422,50 @@ video {
   padding: 12px 20px;
   min-width: 200px;
 }
+.mobile__btn:hover {
+  background-color: #665f55;
+}
+
+.mobile__btn:hover .mobile__span-wrapprer span {
+  color: #e1d4c9;
+}
+
+.mobile__btn-icon-wrapper svg {
+  color: #403f3d;
+}
+
+.mobile__btn:hover .mobile__btn-icon-wrapper svg {
+  color: #e1d4c9;
+}
 
 .mobile__btn-icon-wrapper {
   display: flex;
   gap: 8px;
 }
 
+.mobile__span-wrapprer span {
+  text-align: left;
+  font-weight: 600;
+}
+
 .mobile__span-wrapprer span:first-child {
   font-size: 10px;
-  font-weight: 600;
   line-height: 140%;
-  text-align: left;
 }
 
 .mobile__span-wrapprer span:last-child {
   font-size: 16px;
-  font-weight: 600;
   line-height: 150%;
-  text-align: left;
 }
 
 .mobile__span-wrapprer {
   display: flex;
   flex-direction: column;
   gap: 2px;
+}
+
+.footer {
+  margin-bottom: 63px;
 }
 
 .footer__container {
@@ -468,6 +505,12 @@ video {
   width: 60px;
   height: 60px;
   border: 1px solid #c1b6ad;
+  color: #e1d4c9;
+}
+.social__link:hover, .social__link:focus, .social__link:active {
+  background-color: #e1d4c9;
+  border: 1px solid #e1d4c9;
+  color: #403f3d;
 }
 
 .contact {
@@ -488,6 +531,16 @@ video {
 .contact__item {
   display: flex;
   gap: 8px;
+}
+.contact__item:hover {
+  border-bottom: 1px solid #e1d4c9;
+  width: fit-content;
+}
+
+.contact__addres-link {
+  display: flex;
+  gap: 8px;
+  color: #e1d4c9;
 }
 
 .contact__address {

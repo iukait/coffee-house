@@ -16,6 +16,17 @@
 .contact__item {
   display:flex;
   gap: 8px;
+
+  &:hover {
+    border-bottom: 1px solid $color-bone;
+    width: fit-content;
+  }
+}
+
+.contact__addres-link{
+  display:flex;
+  gap: 8px;
+  color:$color-bone;
 }
 
 .contact__address{

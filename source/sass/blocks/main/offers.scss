@@ -10,12 +10,12 @@ margin-bottom: 40px;
 
 .offers__title span {
   color: $color-light-taupe;
+  font-style: italic;
 }
 
 .offers__slider-wrapper{
   position: relative;
 }
-
 
 .offers__btn-control {
   position:absolute;
@@ -29,7 +29,21 @@ margin-bottom: 40px;
   background-color: $color-transparent;
   top:50%;
   transform:translateY(-50%);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color:$color-wenge;
+  }
+  
 }
+
+.offers__btn-control:hover svg,
+.offers__btn-control:focus svg,
+.offers__btn-control:active svg{
+ color:$color-bone;
+}
+
 .offers__btn-control--prev {
   transform:  translateY(-50%) rotate(180deg); 
   left: 0;
