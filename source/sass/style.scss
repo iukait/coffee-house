@@ -1,0 +1,27 @@
+//Global
+// ---------------------------------------
+
+@import "global/variable";
+@import "global/typography";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/container";
+
+// Blocks
+// --------------------------------------
+
+@import "blocks/header/header";
+@import "blocks/header/nav";
+@import "blocks/main/hero";
+@import "blocks/main/offers";
+@import "blocks/main/about";
+@import "blocks/main/mobile";
+@import "blocks/footer/footer";
+@import "blocks/footer/social";
+@import "blocks/footer/contact";
+
+// Menu Page
+
+@import "blocks/menu-main/menu";
+@import "blocks/menu-main/menu-list";
+@import "blocks/menu-main/list-content";

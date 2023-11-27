@@ -1,0 +1,75 @@
+.mobile__container {
+  display:flex;
+  gap: 99px;
+  padding-bottom: 97px; 
+}
+
+.mobile__text-wrapper {
+  width: 630px;
+  padding: 144px  0;
+  display:flex;
+  flex-direction:column;
+  gap: 40px;
+}
+
+.mobile__title span{
+  font-style: italic;
+  color: $color-light-taupe;
+}
+
+.mobile__btn-wrapper {
+  display:flex;
+  gap: 20px;
+}
+
+.mobile__btn {
+  background-color: $color-transparent;
+  border-radius: 100px;
+  border: 1px solid $color-wenge;
+  padding: 12px 20px;
+  min-width:200px;
+
+    &:hover {
+      background-color: $color-wenge;
+    }
+}
+
+.mobile__btn:hover .mobile__span-wrapprer span {
+  color:$color-bone;
+} 
+
+.mobile__btn-icon-wrapper svg {
+  color:$color-default-black-olive;
+}
+
+.mobile__btn:hover .mobile__btn-icon-wrapper svg {
+  color:$color-bone;
+} 
+
+
+
+.mobile__btn-icon-wrapper{
+  display:flex;
+  gap:8px;
+}
+
+.mobile__span-wrapprer  span {
+   text-align:left;
+   font-weight: 600;   
+}
+
+.mobile__span-wrapprer span:first-child {
+  font-size: 10px; 
+  line-height: 140%;
+}
+
+.mobile__span-wrapprer span:last-child {
+  font-size: 16px;
+  line-height: 150%; 
+}
+
+.mobile__span-wrapprer {
+  display:flex;
+  flex-direction:column;
+  gap: 2px;
+}
