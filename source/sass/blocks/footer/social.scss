@@ -1,0 +1,37 @@
+
+.social {
+  width: 530px;
+}
+.social__title {
+  margin-bottom: 40px;
+}
+
+.social__title span {
+  font-style: italic;
+  color: $color-light-taupe;
+}
+.social__list {
+  display:flex;
+  list-style:none;
+  gap: 12px;
+}
+
+.social__link {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius : 50%;;
+  width: 60px;
+  height: 60px;
+  border: 1px solid $color-silver-pink;
+  color:$color-bone;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-bone;
+    border: 1px solid $color-bone;
+    color:$color-default-black-olive;
+}
+}
+

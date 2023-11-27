@@ -1,0 +1,10 @@
+{
+  "name": "coffe_shop",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass input.scss output.css"
+  },
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}
